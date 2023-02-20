@@ -7,6 +7,9 @@
 *.lof
 *.lot
 *.out.synctex.gz
+*.synctex.gz
+*.out
 *.toc
 *.pdf
 
+Strumentazione/Dispensa/Thesis.pdf
