@@ -1,0 +1,28 @@
+Now the file has more content!System ---
+
+Matrices:
+M =
+[[0.25 0.   0.   0.  ]
+ [0.   0.25 0.   0.  ]
+ [0.   0.   0.25 0.  ]
+ [0.   0.   0.   0.25]]
+
+K =
+[[ 8. -4.  0.]
+ [-4.  8. -4.]
+ [ 0. -4.  4.]]
+
+---
+
+Eigenanalysis ---
+
+Eigenvalues and natural frequencies:
+omega_i = [0.28332245 0.79385187 1.14714919]
+Eigenvectors (mode shapes):
+v =
+[[ 0.32798528  0.73697623  0.59100905]
+ [ 0.59100905  0.32798528 -0.73697623]
+ [ 0.73697623 -0.59100905  0.32798528]]
+
+NOTE: unit norm normalization.
+---
