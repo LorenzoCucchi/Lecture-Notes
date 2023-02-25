@@ -107,5 +107,5 @@ ax1[1].set_xlabel('Frequency')
 ax1[0].grid(True, which="both", ls="--")
 ax1[1].grid(True, which="both", ls="--")
 
-
+# 
 plt.show()
