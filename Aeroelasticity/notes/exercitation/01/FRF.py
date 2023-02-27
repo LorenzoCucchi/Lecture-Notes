@@ -10,7 +10,7 @@ from scipy import signal
 N = 3  # number of masses
 m = 2  # [kg]
 k = 1  # [N/m]
-c = 0.1
+c = 0
 
 F = 1
 t = np.arange(0,20,0.01)
@@ -23,6 +23,8 @@ C = [[1,0]]
 
 
 sys = signal.StateSpace(A,B,C,0)
+trf = signal.ss2tf(A,B,C,0)
+print(trf)
 print(sys)
 
 
@@ -44,6 +46,9 @@ plt.figure()
 plt.plot(Hw.real, Hw.imag, "b")
 
 plt.plot(Hw.real, -Hw.imag, "r")
+
+
+
 # %% Build system matrix
 pairwise = np.zeros([N, N])
 
@@ -66,7 +71,7 @@ else:
 
 
 
-print("inversa di m", invM)
+# print("inversa di m", invM)
 #A = np.vstack((
 #    np.hstack((np.matmul(-invM, C), np.matmul(-invM, K))),
 #    np.hstack((np.eye(N),           np.zeros((N, N))))
@@ -78,10 +83,10 @@ A = np.vstack((
 ))
 
 
-print("A Matrix\n", A)
+# print("A Matrix\n", A)
 
 B = np.zeros((2*N, 1))
-B[:-1,0] = 1/m
+B[N:,0] = 1/m
 print("B:\n", B)
 
 C = np.zeros((1,2*N))
@@ -106,6 +111,14 @@ ax1[1].set_ylabel('Phase')
 ax1[1].set_xlabel('Frequency')
 ax1[0].grid(True, which="both", ls="--")
 ax1[1].grid(True, which="both", ls="--")
+
+
+fig2, ax2 = plt.subplots(1,1)
+
+ax2.plot(Hw.real, Hw.imag, "b")
+
+ax2.plot(Hw.real, -Hw.imag, "r")
+
 
 # 
 plt.show()

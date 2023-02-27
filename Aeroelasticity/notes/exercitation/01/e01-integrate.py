@@ -8,7 +8,7 @@ import scipy
 N = 4  # number of masses
 m = 1  # [kg]
 k = 1  # [N/m]
-c = 0.1  # [Ns/m]
+c = 0.1  # [Ns/m] 
 
 # %% Build system matrix
 M = m * np.eye(N)
