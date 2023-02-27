@@ -5,10 +5,10 @@ import numpy as np
 import control
 
 # %% Model settings
-N = 4  # number of masses
+N = 5  # number of masses
 m = 1  # [kg]
 k = 1  # [N/m]
-c = 0.01
+c = 0
 BC =  'CLAMPED-FREE'
 F = 1
 

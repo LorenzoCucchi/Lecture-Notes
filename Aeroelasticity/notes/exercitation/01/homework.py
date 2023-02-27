@@ -13,7 +13,7 @@ sqrtv = np.vectorize(cmath.sqrt)
 #L = 5.5
 Jp = 1
 GJ = 1
-L = 4
+L = 5
 
 BC = 'CLAMPED-FREE'
 #BC = 'FREE-FREE'
@@ -21,9 +21,9 @@ BC = 'CLAMPED-FREE'
 
     
 # Number of elements        
-N = 4
+N = 5
 
-li = L/N
+li = 1
 # %% Build system matrix
 
 M = np.eye(N)*Jp*li
