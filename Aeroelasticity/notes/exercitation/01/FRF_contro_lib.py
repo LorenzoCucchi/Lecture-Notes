@@ -1,10 +1,7 @@
 ### Mtheta''+Ktheta =Te^{i\Omegat} ###
 
 import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
 import numpy as np
-import scipy.linalg as la
-from scipy import signal
 import control
 
 # %% Model settings

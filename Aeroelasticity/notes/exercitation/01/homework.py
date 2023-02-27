@@ -13,7 +13,7 @@ sqrtv = np.vectorize(cmath.sqrt)
 #L = 5.5
 Jp = 1
 GJ = 1
-L = 1
+L = 4
 
 BC = 'CLAMPED-FREE'
 #BC = 'FREE-FREE'
@@ -21,7 +21,7 @@ BC = 'CLAMPED-FREE'
 
     
 # Number of elements        
-N = 10
+N = 4
 
 li = L/N
 # %% Build system matrix
@@ -48,7 +48,7 @@ omega = np.imag(sqrtv(l))
 idx = omega.argsort()
 
 
-f = open("Lecture-Notes\Aeroelasticity\\notes\exercitation\\01\\res.txt", "w")
+f = open("Aeroelasticity/notes/exercitation/01/res.txt", "w")
 f.write("Now the file has more content!")
 
 f.write("System ---\n\n")
